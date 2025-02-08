@@ -1,5 +1,6 @@
 # SustainTheWay
 
+<<<<<<< HEAD
 
 
 Hello Everyone Welcome to Sustain the Way!! This websites goal is to help local food pantries around us. By using your zip code we are able to cater to the resources around you both as a consumer and producer. We are able to bridge food pantries to farmers who are experiancing food waste so that the resources are being alocated properly. And the users are also able to access their local pantries arounf them with this servece being able to get into contact with them. 
@@ -37,3 +38,12 @@ javascript
 
 ## Try it out
 Link to: [GitHub Repo](https://github.com/HariniSolai/SustainTheWay)
+=======
+Our Mission at Sustain the Way
+
+At Sustain the Way, we are committed to reducing food waste and supporting local communities by connecting food pantries with surplus resources. 
+Our platform bridges the gap between farmers with excess food and pantries in need, ensuring better allocation of resources. 
+By simply entering a zip code, users can find local pantries, access their services, and get in touch with them directly. 
+We also provide donors with an easy way to locate nearby pantries and understand their specific needs.  
+Together, we can create a more sustainable and food-secure future.  
+>>>>>>> 2cb29373ff2d7a2d5d68d267b3cf3929613d6597

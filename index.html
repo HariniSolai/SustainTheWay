@@ -27,40 +27,45 @@
         <section class="header">
             <nav>
                 <a href="index.html" alt="what is that"><img src="#"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <!-- Buttons Section -->
-                        <form method="POST" action="/find">
-                            <button type="submit">Find</button>
-                        </form>
-                        <form method="POST" action="/help">
-                            <button type="submit">Help</button>
-                        </form>
-                        <form method="POST" action="/learn">
-                            <button type="submit">Learn</button>
-                        </form>
-                        <li><a href="">Food Insecurity</a></li>
-                        <li><a href="">Pantry Sites</a>
-                            <!-- for farmers -->
-                        </li>
-                        <li><a href="">In-stock Produces</a>
-                            <!-- for producers -->
-                        </li>
-                    </ul>
-
-                </div>
+                <div class="container">
+                    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                      <div class="col-md-3 mb-2 mb-md-0">
+                        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                          <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                        </a>
+                      </div>
+                
+                      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+                        <li><a href="#" class="nav-link px-2">Learn</a></li>
+                        <li><a href="#" class="nav-link px-2">Find</a></li>
+                        <li><a href="#" class="nav-link px-2">Help</a></li>
+                        <li><a href="#" class="nav-link px-2">About</a></li>
+                      </ul>
+                
+                      <div class="col-md-3 text-end">
+                        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                        <button type="button" class="btn btn-primary">Sign-up</button>
+                      </div>
+                    </header>
+                  </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
 
             <div>
                 <div class="text-box">
                     <!-- first section -->
-                    <h1>ACCESS TO YOUR REAL NUTRITIONS.<br>FIGHT FOOD WASTE.<br>SUPPORT FARMERS.</h1>
-                    <!-- then have a picture about vegetables here -->
-                    <p>Check to see if we cover your area</p> <!-- so this is where the customers get -->
+                    <div class="px-4 py-5 my-5 text-center">
+                        <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                        <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+                        <div class="col-lg-6 mx-auto">
+                          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                          </div>
+                        </div>
+                      </div>
                 </div>
 
                 <div class="ugly-veggie">
@@ -73,9 +78,11 @@
             <div class="row">
                 <div class="mission">
                     <h1>OUR MISSION</h1>
-                    <p>At Smart Food Systems, we strive to be fairer to our hard-working farmers, loyal customers and the friendly planet.</p>
-                    <p>We are dedicated to serving the best home-made, freshest produces, with only a deliver away from our farmers to you through your local food pantry.</p>  
-                    <p>Join us on the journey to reduce food waste and increase food access.</p>
+                    <p>At Sustain the Way, we are committed to reducing food waste and supporting local communities by connecting food pantries with surplus resources. 
+                        Our platform bridges the gap between farmers with excess food and pantries in need, ensuring better allocation of resources. 
+                        By simply entering a zip code, users can find local pantries, access their services, and get in touch with them directly. 
+                        We also provide donors with an easy way to locate nearby pantries and understand their specific needs.  
+                        Together, we can create a more sustainable and food-secure future.</p>
                 </div>
                 
                 <div class="pic">
@@ -85,12 +92,16 @@
         </section>
 
         <section class="food-security">
-            <h1>The issues around Food Insecurity</h1>
-            <p>AI paragraph writer is more then a paragraph generation tool. In fact, it is an AI-based writing assistant that has the capabilities to write paragraphs the way you write them. This online paragraph maker provides content that is readable, effective, unique, and engaging.</p>
-            <p>Our free AI paragraph generator uses machine learning and natural language processing & other top notch technologies to create content. This is a major reason why the content quality is so high and paragraphs are near to human writing.</p>
-
+            <h1>The issues around Food Waste and Insecurity</h1>
+            <p> This imbalance is not due to a lack of food but rather 
+                inefficient distribution, lack of awareness, and logistical challenges. 
+                Farms, grocery stores, and households often discard edible food, while food pantries 
+                and low-income communities face shortages. Addressing this problem requires better 
+                resource allocation, stronger community networks, and innovative solutions to ensure 
+                that surplus food reaches those who need it most. </p>
         </section>
 
+    <
         <!--JavaScript for toggle menu -->
         <script>
             var navLinks = document.getElementById("navLinks");
