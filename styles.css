@@ -64,3 +64,9 @@ img{
         font-size: 1rem;
     }
 }
+
+
+#contentPrint {
+    font-family: 'Karla', sans-serif;
+    font-size: 20px; /* Larger font size */
+}
