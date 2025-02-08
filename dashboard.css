@@ -1,0 +1,41 @@
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.table-container {
+    width: 60%;
+    margin-right: 20px;
+}
+
+#addressesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#addressesTable th, #addressesTable td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#addressesTable th {
+    background-color: #f2f2f2;
+}
+
+.map-container {
+    width: 35%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#map {
+    height: 300px; /* Adjust as needed */
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
