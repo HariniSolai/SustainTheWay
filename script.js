@@ -1,26 +1,26 @@
-const { OpenAI } = require('openai');
-
-// Initialize OpenAI client with API key
-const openai = new OpenAI({
-  apiKey: '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',
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("btntest").addEventListener("click", getChatCompletion);
 });
 
-// Function to get a chat completion response
-async function getChatCompletion() {
+async function getChatCompletion(event) {
+  event.preventDefault(); // Prevents default form behavior
+
+  document.getElementById("contentPrint").textContent = "Generating response...";
+
   try {
-    const completion = await openai.chat.completions.create({
-      model: 'gpt-4',
-      messages: [
-        { role: 'system', content: 'You are a helpful assistant.' },
-        { role: 'user', content: 'Write a haiku about recursion in programming.' }
-      ]
+    const content = document.getElementById("searchContent").value;
+    const response = await fetch('http://localhost:5000/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ userMessage: content }),
     });
 
-    console.log(completion.choices[0].message.content);
+    const data = await response.json();
+    document.getElementById("contentPrint").textContent = data.response;
   } catch (error) {
-    console.error('Error fetching completion:', error);
+    console.error('Error:', error);
+    document.getElementById("contentPrint").textContent = "Error fetching response.";
   }
 }
-
-// Call the function to get the completion
-getChatCompletion();
