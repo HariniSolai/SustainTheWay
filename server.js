@@ -1,17 +1,19 @@
-// server.js (Node.js Backend)
+// backend, to protect API key and sercure requests 
 const express = require('express');
 const OpenAI = require('openai');
-const cors = require('cors'); // Enable CORS for frontend requests
-require('dotenv').config(); // Load API key from .env file
+const cors = require('cors'); 
+require('dotenv').config(); // gets the API from the environment variables 
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
+// stores API key in an .env file for security 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY, // Store API key in an .env file (security best practice)
+  apiKey: process.env.OPENAI_API_KEY, 
 });
 
+//sending the request from the user's input to openai 
 app.post('/api/chat', async (req, res) => {
   try {
     const { userMessage } = req.body;
@@ -24,12 +26,15 @@ app.post('/api/chat', async (req, res) => {
       ],
     });
 
+    //recived a valid response 
     res.json({ response: completion.choices[0].message.content });
   } catch (error) {
+    //recived an error 
     console.error('Error:', error);
     res.status(500).json({ error: 'Something went wrong' });
   }
 });
 
+//setting up the port that the server is listening on 
 const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
