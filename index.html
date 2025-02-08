@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="idth=device-width, initial-scale=1.0" /> <!-- view on other device -->
+        
+        <title>SustainTheWay</title>
+        <link href="styles.css" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    </head>
+
+    <body style="background-color: #DFE1B0">
+
+        <style>
+            body {
+              background-image: url('img_girl.jpg');
+            }
+        </style>
+
+        <!-- Header and first section -->
+        <section class="header">
+            <nav>
+                <a href="index.html" alt="what is that"><img src="#"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Food Insecurity</a></li>
+                        <li>a href="">Pantry Sites</a>
+                            <!-- for farmers -->
+                        </li>
+                        <li><a href="">In-stock Produces</a>
+                            <!-- for producers -->
+                        </li>
+                    </ul>
+
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div>
+                <div class="text-box">
+                    <!-- first section -->
+                    <h1>ACCESS TO YOUR REAL NUTRITIONS.<br>FIGHT FOOD WASTE.<br>SUPPORT FARMERS.</h1>
+                    <!-- then have a picture about vegetables here -->
+                    <p>Check to see if we cover your area</p> <!-- so this is where the customers get -->
+                </div>
+
+                <div class="ugly-veggie">
+                    <img src="" alt="Picture depicting vegetables that could have been saved."
+                </div>
+            </div>
+        </section>
+
+        <section class="our-mission" style="background-color: #617400">
+            <div class="row">
+                <div class="mission">
+                    <h1>OUR MISSION</h1>
+                    <p>At Smart Food Systems, we strive to be fairer to our hard-working farmers, loyal customers and the friendly planet.</p>
+                    <p>We are dedicated to serving the best home-made, freshest produces, with only a deliver away from our farmers to you through your local food pantry.</p>  
+                    <p>Join us on the journey to reduce food waste and increase food access.</p>
+                </div>
+                
+                <div class="pic">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BwjcYxJwsdU?si=l8kbXejdTA7HOMm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="food-security">
+            <h1>The issues around Food Insecurity</h1>
+            <p>AI paragraph writer is more then a paragraph generation tool. In fact, it is an AI-based writing assistant that has the capabilities to write paragraphs the way you write them. This online paragraph maker provides content that is readable, effective, unique, and engaging.</p>
+            <p>Our free AI paragraph generator uses machine learning and natural language processing & other top notch technologies to create content. This is a major reason why the content quality is so high and paragraphs are near to human writing.</p>
+
+        </section>
+
+
+
+
+
+        <!--JavaScript for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+
+    </body>
+</html>
