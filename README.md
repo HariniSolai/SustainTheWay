@@ -2,6 +2,26 @@
 
 Hello Everyone! Welcome to Sustain the Way!!
 
+## Instructions for Running the Project
+1. Open link. It will take you to our GitHub code-site.<br>
+2. Click on the "<> Code" green button.<br>
+3. Click and copy the "http:/" link.<br>
+4. Open VS Code and on Welcome page, there will be a "Clone Git Repository" text. Click on that.<br>
+    A search bar with "Clone with GitHub" will pop up. Paste the link and press Enter.<br>
+5. Save the repository in a folder where you can remember.<br>
+6. Sometimes VS Code will ask "Would you like to open the cloned repository?". Click "Open". A list of files will pop up. Click on the file "index.html".<br>
+7. If you have not downloaded "Live Server" extension in your VS Code, install it. After that, there will be a small section in the furthest right bottom of the screen. Click on it. "Go Live" will pop up. Click again.<br>
+8. The website will open on your default browser.
+
+## Overview of Code Structure
+We built our website using HTML, CSS, JavaScript, and Node.js.
+<br>
+1. HTML takes up a large portion of our project. It is where we input the texts, headings, build different sections and pages, incorporate pictures and videos; essentially, HTML is the tool to build our content on.<br>
+2. We used CSS on formatting all elements in the HTML that needs to get stylings. Every HTML section in our code has a formatting in CSS, where we change either the size, margin, alignment, block display, etc.<br>
+3. JavaScript is for functions and the behaviourals of the websites' elements and incorporating OpenAI AI as a feature of our website. And to compile JavaScript, we need Node.js as the complier to run the js files.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## Our Mission at Sustain the Way
 At Sustain the Way, we are committed to reducing food waste and supporting local communities by connecting food pantries with surplus resources. Our platform bridges the gap between farmers with excess food and pantries in need, ensuring better allocation of resources. By simply entering a zip code, users can find local pantries, access their services, and get in touch with them directly. We also provide donors with an easy way to locate nearby pantries and understand their specific needs.
 <br>
