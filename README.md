@@ -15,16 +15,14 @@ Hello Everyone! Welcome to Sustain the Way!!
 
 ## Overview of Code Structure
 We built our website using HTML, CSS, JavaScript, and Node.js.
-<br>
+
 1. HTML takes up a large portion of our project. It is where we input the texts, headings, build different sections and pages, incorporate pictures and videos; essentially, HTML is the tool to build our content on.<br>
 2. We used CSS on formatting all elements in the HTML that needs to get stylings. Every HTML section in our code has a formatting in CSS, where we change either the size, margin, alignment, block display, etc.<br>
 3. JavaScript is for functions and the behaviourals of the websites' elements and incorporating OpenAI AI as a feature of our website. And to compile JavaScript, we need Node.js as the complier to run the js files.
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 ## Our Mission at Sustain the Way
 At Sustain the Way, we are committed to reducing food waste and supporting local communities by connecting food pantries with surplus resources. Our platform bridges the gap between farmers with excess food and pantries in need, ensuring better allocation of resources. By simply entering a zip code, users can find local pantries, access their services, and get in touch with them directly. We also provide donors with an easy way to locate nearby pantries and understand their specific needs.
-<br>
+
 Together, we can create a more sustainable and food-secure future.
 
 ## Inspiration
@@ -36,7 +34,7 @@ This websites goal is to help local food pantries around us. By using your zip c
 Donors (usually farmers) can also use this website to see the local pantries around them and view what they may be needing to collect at any given moment bridging the cycle of giving back to our communties.
 
 ## How we built it
-Using JavaScript, node.js, Html and Css, we can create 
+We created this website using JavaScript, node.js, Html and Css. 
 
 ## Challenges we ran into
 We ran into some technical issues while trying to get the API Key of OpenAI to work on multiple computers, as it was working on one but causing errors in the others. It caused a lot of troubleshooting. We had to create another API Key and set up the environment variables in our computer to match with the API Keys. In the end, the problem turned out to be that we exceeded the limit on the daily usage (free-version issue), and we purchased a one-month API Key. Thankfully, it worked out perfectly and rapidly after that.
@@ -53,7 +51,7 @@ We also learnt that coming to hackathons like these can help us expand our knowl
 
 ## What's next for SustainTheWay
 After the competition, we will complete our intended features, namely checking food pantries in a specific zip code, improving our search engine and modifying any little imperfections about the front-face of the website.
-<br>
+
 Someday in the future, some of us can go on to develop an actual system of this food allocation and make an impactful cause to people around us. SustainTheWay is the foundation for a bigger cause.
 
 ## Built With
