@@ -1,172 +1,61 @@
-* {
-    font-family: "Karla", serif;
-    font-optical-sizing: auto;
-    /* font-weight: 200; */
-    font-style: normal;
-    margin: 0;
-    padding: 0;
+/* General Styling */
+body {
+    background-color: #DFE1B0;
+    font-family: 'Karla', sans-serif;
+    text-align: center; /* Centers text globally */
 }
 
-.header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(97, 116, 0, 0.7), rbga(97, 116, 0, 0.7));
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    padding-left: 200px;
+/* Navbar */
+.navbar {
+    background-color: #617400 !important;
 }
 
-nav {
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+.navbar-brand, .nav-link {
+    color: white !important;
 }
 
-nav img {
-    width: auto;
+.nav-link:hover {
+    color: #BFD87E !important;
 }
 
-.nav-links {
-    flex: 1;
-    text-align: right;
+/* Center Content */
+.text-center {
+    text-align: center;
 }
 
-.nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+/* Paragraph Styling */
+p {
+    text-align: center; /* Ensures paragraphs are centered */
+    display: inline-block; /* Keeps text together */
+    max-width: 800px; /* Prevents overly long lines */
+    margin: 0 auto; /* Centers the paragraph block */
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improves readability */
+    white-space: normal; /* Prevents text from breaking unnaturally */
 }
 
-.nav-links ul li a {
-    color: #455200;
-    text-decoration: none;
-    font-size: 14px;
+/* Hero Section */
+.px-4.py-5.my-5.text-center {
+    padding: 50px 20px;
 }
 
-.nav-link ul li::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #DFE1B0;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-
-.nav-link ul li:hover::after {
-    width: 100%;
-}
-
-/* ***********first section*********** */
-
-.text-box {
-    width: 90%;
-    color: #455200;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px; /* random addition */
-    /* text-align: left; I don't need this for now */
-}
-
-.text-box h1 {
-    font-size: 45px;
-}
-
-.text-box p {
-    margin: 10px 0 40px;
-    font-size: 20px;
-    color: #455200;
-}
-
-nav .fa {
-    display: none;
-}
-
-@media(max-width: 700px) {
-    .text-box h1 {
-        font-size: 35px;
-    }
-
-    .nav-links ul li {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        background: #979D55;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-
-    nav .fa {
-        display: block;
-        color: #979D55;
-        margin: 10px;
-        font-size: 14px;
-    }
-
-    .nav-links ul {
-        padding: 30px;
-
-    }
-}
-
-/* ***********our-mission*********** */
-
+/* Our Mission Section */
 .our-mission {
-    width: 100%;
-    margin: auto;
-    text-align: left;
-    padding-top: 100px;
-    padding-bottom: 80px;
-}
-
-.our-mission h1, p {
-    padding-left: 100px;
-    padding-right: 800px;
+    background-color: #617400; 
+    padding: 40px;
+    color: white;
     text-align: center;
 }
 
-.our-mission h1 {
-    font-size: 35px;
-    font-weight: 600;
-    color: #DFE1B0;
+/* Food Security Section */
+.food-security {
+    padding: 40px;
     text-align: center;
-    padding-bottom: 20px;
 }
 
-.our-mission p {
-    color: #DFE1B0;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-    padding-top: 0;
-    margin: 20px;
+/* Responsive Fix */
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
 }
-
-.row {
-    display: inline-block;
-}
-
-.pic {
-    padding-right: 100px; 
-    padding-left: 800px;
-}
-
-/*
-white: #FFFFFF;
-light-green: #DFE1B0;
-sage-green: #979D55;
-darker-sage: #617400;
-dark-green: #455200;
-*/
