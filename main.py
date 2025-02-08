@@ -1,15 +1,30 @@
-from openai import OpenAI
+# from openai import OpenAI
 
-client = OpenAI(
-  api_key="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"
-)
+# client = OpenAI(
+#   api_key="sk-proj-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"
+# )
+
+# completion = client.chat.completions.create(
+#   model="gpt-4o-mini",
+# #   store=True,
+#   messages=[
+#     {"role": "user", "content": "write a haiku about ai"}
+#   ]
+# )
+
+# print(completion.choices[0].message['content'])
+from openai import OpenAI
+client = OpenAI()
 
 completion = client.chat.completions.create(
-  model="gpt-4o-mini",
-  store=True,
-  messages=[
-    {"role": "user", "content": "write a haiku about ai"}
-  ]
+    model="gpt-4o-mini",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {
+            "role": "user",
+            "content": "Write a haiku about recursion in programming."
+        }
+    ]
 )
 
 print(completion.choices[0].message)
