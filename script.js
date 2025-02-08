@@ -24,7 +24,7 @@ async function getChatCompletion(event) {
     //getting the response from openai and printing it 
     const data = await response.json();
      
-    document.getElementById("contentPrint").textContent = "\n" + data.response;
+    document.getElementById("contentPrint").textContent = data.response;
 
   } catch (error) {
     //if there was an error
