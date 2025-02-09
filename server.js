@@ -21,7 +21,7 @@ app.post('/api/chat', async (req, res) => {
     const completion = await openai.chat.completions.create({
       model: 'gpt-4',
       messages: [
-        { role: 'system', content: 'You are a helpful assistant.' },
+        { role: 'system', content: 'You are a helpful assistant, answering questions about food, farming and agriculture. ' },  
         { role: 'user', content: userMessage },
       ],
     });
