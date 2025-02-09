@@ -1,6 +1,8 @@
 # SustainTheWay
 
 Hello Everyone! Welcome to Sustain the Way!!
+<br>
+Here is the link to our slides: https://drive.google.com/file/d/13ZzAhy6_gJnPe05Nz5hylThokgOe2Ci1/view?usp=drive_link
 
 ## Instructions for Running the Project
 1. Open link. It will take you to our GitHub code-site.<br>
